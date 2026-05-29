@@ -256,7 +256,7 @@ public class Application {
 
         getAverageButton.addActionListener(event -> {
             final String course = courseField.getText();
-
+            System.out.println(getAverageGradeUseCase.getAverageGrade(course));
             try {
                 final float avg = getAverageGradeUseCase.getAverageGrade(course);
                 JOptionPane.showMessageDialog(jFrame, "Average Grade: " + avg);
